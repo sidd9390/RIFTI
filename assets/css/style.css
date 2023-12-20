@@ -3277,7 +3277,6 @@ button {
 .banner-section.style-5 {
   background-image: url(../images/home_s1/directionbanner.jpg);
   background-position: center;
-  background-attachment: fixed;
   padding: 260px 0 200px;
 }
 @media (min-width: 992px) {
