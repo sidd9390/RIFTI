@@ -3277,10 +3277,12 @@ button {
 .banner-section.style-5 {
   background-image: url(../images/home_s1/directionbanner.jpg);
   background-position: center;
-  padding: 260px 0 200px;
+  padding: 160px 0 200px;
 }
-@media (min-width: 992px) {
-
+@media (max-width: 769px) {
+  .banner-section.style-5 {
+    padding: 270px 0 200px;
+  }
 }
 .banner-section.style-5::after {
   right: 0;
@@ -3317,6 +3319,7 @@ backdrop-filter: blur(6.3px);
   .banner-section.style-5 {
     background-image: url(../images/home_s1/photographybanner.jpg);
   }
+
 }
 .banner-section.style-5 .section-wrapper .banner-content p {
   font-weight: 500;
