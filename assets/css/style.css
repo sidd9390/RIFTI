@@ -473,7 +473,7 @@ footer.style-2 .footer-top .footer-item.twitter-post .footer-inner .footer-conte
 }
 
 .course-side-detail .csd-content .sidebar-social .ss-content ul li a.rss, .app-section .section-header .lab-btn:hover, .register-section, .clients-section.style-3 .section-wrapper .clients-slider-nav:hover, .clients-section.style-3 .section-wrapper .client-item .client-inner .client-thumb .quote, .feature-section.style-3 .section-wrapper .feature-register, .feature-section.style-3 .section-wrapper .feature-item .feature-inner .feature-content .lab-btn-text span::after, .feature-section.style-3 .section-wrapper .feature-item .feature-inner .feature-content .lab-btn-text span::before, .feature-section.style-3 .section-wrapper .feature-item .feature-inner .feature-content .lab-btn-text span, .feature-section.style-2 .section-wrapper .feature-item .feature-inner:hover .feature-icon, .newsletters-section.style-2, .event-section.style-2 .section-wrapper .event-navi-item:hover, .event-section.style-2 .section-wrapper .event-navi-item.active, .instructor-section.style-3 .section-wrapper .instructor-bottom .instructor-slider .instructor-navi.active, .instructor-section.style-3 .section-wrapper .instructor-bottom .instructor-slider .instructor-navi:hover, .instructor-section.style-2 .section-wrapper .count-item:nth-child(3n+3) .count-inner .count-icon i, .instructor-section.style-2::after, .offer-section .section-wrapper .lab-btn, .offer-section, .contact-info-section .section-wrapper .cinfo-or, .about-section.style-4 .about-item .counter-part .count-item:nth-child(3n+3) .count-inner .count-icon i, .video-section, .course-section.style-4, .course-section.style-3 .section-header .course-filter-group ul li.active, .course-section.style-3 .section-header .course-filter-group ul li:hover, .category-section.style-4 .section-wrapper .lab-btn:hover, .category-section.style-4 .section-wrapper .category-item .category-inner .category-content .cate-icon, .banner-section.style-7 .section-wrapper .banner-top .banner-content .lab-btn:hover, .header-section.style-7 .header-bottom .header-wrapper .menu-area .signup, .header-section.style-5 .header-bottom .lab-btn, .header-section.style-5 .header-bottom .menu > ul > li ul li a:hover, .header-section.style-5 .header-bottom .menu > ul > li ul li a.active, .header-section.style-4 .lab-btn, .header-section.style-4 .menu > ul li ul li a:hover, .header-section.style-4 .menu > ul li ul li a.active, .event-item.style-2 .event-inner .event-content .lab-btn, .event-item.style-2 .event-inner .event-content h5, .scrollToTop.yellow-color i, .yellow-color-section .post-item.style-3 .post-inner .post-content .lab-btn:hover, .yellow-color-section .section-wrapper .course-item.style-3 .course-inner .course-content .lab-btn, .yellow-color-section .section-wrapper .course-item.style-3 .course-inner .course-thumb ul li .price, .yellow-color-section .section-header .course-navi {
-  background: #3183f7;
+  background: #f16126;
 }
 
 .social-icons li a.pinterest {
@@ -3712,7 +3712,7 @@ backdrop-filter: blur(6.3px);
 .about-section::before {
   width: 50%;
   height: 100%;
-  border-bottom: 753px solid #3183f7;
+  border-bottom: 753px solid transparent;
   border-right: 960px solid transparent;
 }
 @media (min-width: 1440px) {
@@ -6691,4 +6691,125 @@ footer.style-2 .footer-top.dark-view * {
   left: 0;
   width: 100%;
   height: 100%;
+}
+.acting-bg{
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/assets/images/Courses-img/actingcourse.jpg);
+  position: relative;
+}
+.script_writing-bg{
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/assets/images/Courses-img/scriptwritingcourse.jpg);
+  position: relative;
+}
+.photography-bg{
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/assets/images/Courses-img/photographycourse.jpg);
+  position: relative;
+}
+.cinematography-bg{
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/assets/images/Courses-img/cinematographycourse.jpg);
+  position: relative;
+}
+.editing-bg{
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/assets/images/Courses-img/editingcourse.jpg);
+  position: relative;
+}
+.colour_grading-bg{
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/assets/images/Courses-img/colourgradingcourse.jpg);
+  position: relative;
+}
+.dubbing-bg{
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/assets/images/Courses-img/dubbingcourse.jpg);
+  position: relative;
+}
+.sound_designing-bg{
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/assets/images/Courses-img/soundcourse.jpg);
+  position: relative;
+}
+.tv_anchoring-bg{
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/assets/images/Courses-img/newscourse.jpg);
+  position: relative;
+}
+.sp i{
+  padding: 15px;
+  color: white;
+  border-radius: 40px;
+  font-size: 20px;
+  background-color: #dd4b39;
+  margin-right: 8px;
+}
+.sp{
+  margin-bottom: 7px;
+}
+.sp2 a i{
+  padding: 15px;
+  color: white;
+  border-radius: 40px;
+  font-size: 20px;
+  background-color: #dd4b39;
+  margin-right: 8px;
+}
+.sp3 i{
+  padding: 8px;
+  color: white;
+  border-radius: 5px;
+  font-size: 17px;
+  background-color: #dd4b39;
+  border: 1px solid transparent;
+}
+.sp3 i:hover{
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  transition: 0.5s;
+}
+
+::-webkit-scrollbar {
+  height: 3px;
+  width: 3px;
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dd4b39;
+  -webkit-border-radius: 1ex;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+  background: #000;
 }
