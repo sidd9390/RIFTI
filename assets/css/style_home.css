@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500&display=swap');
 /* New CSS */
 /* carousel */
 .carousel {
@@ -18,7 +20,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(50%);
+  filter: brightness(35%);
 }
 
 .carousel .list .item .content {
@@ -31,11 +33,56 @@
 .carousel .list .item .content h1 {
   color: #f16126;
   font-size: 80px;
+  font-family: 'Roboto Mono', monospace;
+  
+  --x-offset: -0.0625em;
+  --y-offset: 0.0625em;
+  --stroke: 0.025em;
+  --background-color: white;
+  --stroke-color: lightblue;
+  
+  text-shadow: 
+    
+    var(--x-offset)
+    var(--y-offset)
+    0px
+    var(--background-color), 
+    
+    calc( var(--x-offset) - var(--stroke) )
+    calc( var(--y-offset) + var(--stroke) )
+    0px
+    var(--stroke-color);
+  
+/* for browsers that support spread, added in
+https://drafts.csswg.org/css-text-decor-4/#text-shadow-property
+currently: none browsers! none of them!
+I can't even find a test: 
+https://wpt.fyi/results/css/css-text-decor */
+
+}
+@supports ( text-shadow: 1px 1px 1px 1px black ) {
+  h1 {
+    text-shadow:
+      
+      var(--x-offset)
+      var(--y-offset)
+      0px
+      0px
+      var(--background-color), 
+      
+      var(--x-offset) 
+      var(--y-offset)
+      var(--stroke)
+      0px
+      var(--stroke-color);
+    
+  }
 }
 
 .carousel .list .item .content p {
   color: white;
-  font-size: 23px;
+  font-size: 20px;
+  font-family: 'Roboto Mono', monospace;
 }
 
 
@@ -73,8 +120,8 @@
 }
 
 .thumbnail .item {
-  width: 130px;
-  height: 180px;
+  width: 120px;
+  height: 120px;
   flex-shrink: 0;
   position: relative;
 }
@@ -84,6 +131,8 @@
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
+  filter: opacity(0.9);
+  filter: brightness(50%);
 }
 
 .thumbnail .item .content {
@@ -93,23 +142,27 @@
   left: 10px;
   right: 10px;
 }
-.thumbnail .item .content .title{
-  color: #e34733;
-  font-weight: bold;
+.thumbnail .item .content .titl{
+  color: white;
+  font-size: 10px;
+  font-weight: bolder;
 }
 
 
 /* arrows */
 .arrows {
   position: absolute;
-  top: 80%;
+  top: 85%;
   right: 60%;
   z-index: 100;
-  width: 300px;
+  width: 200px;
   max-width: 30%;
   display: flex;
   gap: 10px;
   align-items: center;
+}
+.arrows button{
+  padding: 8px 10px;
 }
 
 
@@ -289,11 +342,17 @@
 @media only screen and (max-width: 1025px) {
   .carousel .list .item .content h1 {
     color: #f16126;
-    font-size: 70px;
+    font-size: 55px;
   }
   .carousel .list .item .content p {
     color: white;
-    font-size: 22px;
+    font-size: 13px;
+  }
+  .thumbnail .item {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    position: relative;
   }
 }
 
@@ -301,12 +360,12 @@
 @media only screen and (max-width: 769px) {
   .carousel .list .item .content h1 {
     color: #f16126;
-    font-size: 73px;
+    font-size: 50px;
   
   }
   .carousel .list .item .content p {
     color: white;
-    font-size: 21px;
+    font-size: 11px;
   }
 }
 
@@ -314,10 +373,10 @@
 @media only screen and (max-width: 426px) {
   .carousel .list .item .content h1 {
     color: #f16126;
-    font-size: 50px;
+    font-size: 48px;
   }
   .carousel .list .item .content p {
     color: white;
-    font-size: 20px;
+    font-size: 11px;
   }
 }
