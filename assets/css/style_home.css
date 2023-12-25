@@ -28,11 +28,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding-right: 30%;
 }
 
 .carousel .list .item .content h1 {
   color: #f16126;
-  font-size: 80px;
+  font-size: 70px;
   font-family: 'Roboto Mono', monospace;
   
   --x-offset: -0.0625em;
@@ -81,7 +82,7 @@ https://wpt.fyi/results/css/css-text-decor */
 
 .carousel .list .item .content p {
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -98,7 +99,6 @@ https://wpt.fyi/results/css/css-text-decor */
   border: none;
   background-color: #eee;
   letter-spacing: 3px;
-  font-family: Poppins;
   font-weight: 500;
 }
 
@@ -112,7 +112,7 @@ https://wpt.fyi/results/css/css-text-decor */
 .thumbnail {
   position: absolute;
   bottom: 20px;
-  left: 50%;
+  left: 75%;
   width: max-content;
   z-index: 100;
   display: flex;
@@ -120,8 +120,8 @@ https://wpt.fyi/results/css/css-text-decor */
 }
 
 .thumbnail .item {
-  width: 120px;
-  height: 120px;
+  width: 110px;
+    height: 110px;
   flex-shrink: 0;
   position: relative;
 }
@@ -332,8 +332,23 @@ https://wpt.fyi/results/css/css-text-decor */
 /* Responsive CSS */
 
 
-@media only screen and (max-width: 1800px) {
+@media only screen and (max-width: 1441px) {
+  .carousel .list .item .content h1 {
+    color: #f16126;
+    font-size: 60px;
+  }
 
+    .carousel .list .item .content p {
+      color: white;
+      font-size: 13px;
+    }
+  
+    .thumbnail .item {
+      width: 100px;
+      height: 100px;
+      flex-shrink: 0;
+      position: relative;
+    }
 }
 
 
@@ -349,8 +364,8 @@ https://wpt.fyi/results/css/css-text-decor */
     font-size: 13px;
   }
   .thumbnail .item {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+      height: 90px;
     flex-shrink: 0;
     position: relative;
   }
@@ -365,8 +380,25 @@ https://wpt.fyi/results/css/css-text-decor */
   }
   .carousel .list .item .content p {
     color: white;
-    font-size: 11px;
+    font-size: 12px;
   }
+    .thumbnail {
+      position: absolute;
+      bottom: 20px;
+      left: 60%;
+      width: max-content;
+      z-index: 100;
+      display: flex;
+      gap: 20px;
+    }
+  
+    .carousel .list .item .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding-right: 10%;
+    }
 }
 
 
@@ -377,6 +409,23 @@ https://wpt.fyi/results/css/css-text-decor */
   }
   .carousel .list .item .content p {
     color: white;
-    font-size: 11px;
+    font-size: 12px;
   }
+    .thumbnail {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      width: max-content;
+      z-index: 100;
+      display: flex;
+      gap: 20px;
+    }
+  
+    .carousel .list .item .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding-right: 0%;
+    }
 }
